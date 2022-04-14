@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+    <!--
+    <param name="robot_description" command="cat '../urdf/quadruped.urdf'" />
+    -param robot_description
+    -->
+
+    <node name="mybot_spawn" pkg="gazebo_ros" type="spawn_model" output="screen"
+        args="-urdf -file '../urdf/quadruped.urdf' -model quadruped" />
+
+</launch>
+
+<!--
+    rosrun gazebo_ros spawn_model -file quadruped.urdf -urdf -z 1 -model my_object
+-->
